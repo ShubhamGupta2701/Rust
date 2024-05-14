@@ -13,13 +13,29 @@
 
 
 // this wil cause error during compilation which states add with overfloww
+// fn main(){
+//     let mut number : i8 = 5;  //here we introduce new thing 'mut' which is for mutable and let compiler to change value of a variabke during run time
+//     for i in 0..1000{
+//         number = number + 100;
+//     }
+
+//     print!("value of number is  : {}",number);
+// }
+
+
+
+
 fn main(){
-    let mut number : i8 = 5;  //here we introduce new thing 'mut' which is for mutable and let compiler to change value of a variabke during run time
-    for i in 0..1000{
-        number = number + 100;
+    let ismale : bool = true;
+    let isadult : bool = true;
+
+    if ismale{
+        print!("you are a male ");
+    }else{
+        print!("you are not a male");
     }
 
-    print!("value of number is  : {}",number);
+    if ismale && isadult{
+        print!("you are an adult male");
+    }
 }
-
-
